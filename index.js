@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express = require("express");
 const app = express();
 
@@ -5,7 +7,7 @@ const epubRoutes = require("./routes/epubRoutes");
 const webRoutes = require("./routes/webRoutes");
 const errorRoutes = require("./routes/errorRoutes");
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.static("public"));
 app.use(express.urlencoded({extended: false}));
