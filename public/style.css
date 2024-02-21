@@ -59,7 +59,6 @@ main form select {
   font: inherit;
   border-radius: 5px;
   padding: 10px;
-  transform: scale(110%, 110%);
   margin-bottom: 1rem;
   background-color: black;
   color: white;
@@ -80,7 +79,6 @@ button {
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: bold;
-  transform: scale(150%, 150%);
 }
 
 button:hover {
@@ -96,7 +94,6 @@ button:hover {
 .message {
   margin-bottom: 1rem;
   color: black;
-  transform: scale(150%, 150%);
 }
 
 .disabled {
