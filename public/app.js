@@ -66,15 +66,12 @@ window.addEventListener("DOMContentLoaded", async function () {
       link.download = result.file;
       document.body.appendChild(link);
       link.click();
-
       alert("Downloaded");
     });
   } catch (error) {
     alert(error);
   } finally {
-    const input = confirm("Downloaded?");
-    if (input) {
-      this.window.location.href="/";
-    }
+    await new Promise((resolve) => setTimeout(resolve, 60*1000));
+    window.location.href="/";
   }
 });
