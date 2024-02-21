@@ -42,6 +42,8 @@ window.addEventListener("DOMContentLoaded", async function () {
       i += 10;
     }
 
+    console.log("Download button appeared");
+
     downloadBtn.addEventListener("click", async function (e) {
       e.preventDefault();
       const response = await fetch("/download-epub", {
@@ -70,8 +72,5 @@ window.addEventListener("DOMContentLoaded", async function () {
     });
   } catch (error) {
     alert(error);
-  } finally {
-    await new Promise((resolve) => setTimeout(resolve, 60*1000));
-    window.location.href="/";
-  }
+  } 
 });

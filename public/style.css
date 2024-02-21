@@ -112,6 +112,7 @@ button:hover {
 
 #download {
   margin-top: 1rem;
+  display: block;
 }
 
 @keyframes spin {
