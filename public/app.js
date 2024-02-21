@@ -68,11 +68,13 @@ window.addEventListener("DOMContentLoaded", async function () {
       link.click();
 
       alert("Downloaded");
-      
     });
   } catch (error) {
     alert(error);
   } finally {
-    window.location.href = "/";
+    const input = confirm("Downloaded?");
+    if (input) {
+      this.window.location.href="/";
+    }
   }
 });
