@@ -88,10 +88,13 @@ button:hover {
   cursor: pointer;
 }
 
+#loader-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .message {
-  width: auto;
-  display: inline-block; 
-  margin: 1rem auto;
+  margin-bottom: 1rem;
   color: black;
   transform: scale(150%, 150%);
 }
@@ -111,8 +114,8 @@ button:hover {
 }
 
 #download {
-  margin-top: 1rem;
-  display: block;
+  max-width: 50%;
+  margin: 1rem auto 0 auto;
 }
 
 @keyframes spin {
